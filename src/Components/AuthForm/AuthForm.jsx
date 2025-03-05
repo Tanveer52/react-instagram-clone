@@ -8,6 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
@@ -16,19 +17,15 @@ function AuthForm() {
     password: "",
     confirmPassword: "",
   });
+  const navigation = useNavigate();
 
   const handleAuthSubmit = () => {
-    if (isLogin && (!inputs.email || !inputs.password)) {
-      alert("You have to provide Email and Password to login");
-    } else if (
-      !isLogin &&
-      (!inputs.email || !inputs.password || !inputs.confirmPassword)
-    ) {
-      alert("You have to provide Email, Password & Confirm Password");
-    } else {
-      console.log(inputs);
-      setInputs({});
+    if (!inputs.email || !inputs.password) {
+      alert("You have to provide Email and Password");
+      return;
     }
+
+    navigation("/");
   };
 
   return (
