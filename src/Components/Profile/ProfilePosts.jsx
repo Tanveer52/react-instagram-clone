@@ -1,5 +1,6 @@
-import { Grid, Image, Skeleton, Stack } from "@chakra-ui/react";
+import { Grid, Skeleton, Stack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import ProfilePost from "./ProfilePost";
 
 function ProfilePosts() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,14 +27,7 @@ function ProfilePosts() {
         ))}
       {!isLoading &&
         [1, 2, 3, 4].map((item, index) => (
-          <Image
-            key={index}
-            height={300}
-            width={"full"}
-            fit={"cover"}
-            borderRadius={4}
-            src={`../public/img${item}.png`}
-          />
+          <ProfilePost key={index} item={item} />
         ))}
     </Grid>
   );
