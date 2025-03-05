@@ -52,7 +52,8 @@ function SideBar() {
       gap={10}
       borderRight={"1px solid grey"}
       position={"fixed"}
-      p={5}
+      p={{ base: 0, md: 5 }}
+      pt={{ base: 5, md: 5 }}
       top={0}
       left={0}
       bottom={0}

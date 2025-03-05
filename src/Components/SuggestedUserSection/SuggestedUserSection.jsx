@@ -20,7 +20,13 @@ function SuggestedUserSection() {
     },
   ];
   return (
-    <VStack flex={2} mt={10} w={"full"} ml={10}>
+    <VStack
+      flex={2}
+      mt={10}
+      w={"full"}
+      ml={10}
+      display={{ base: "none", md: "block" }}
+    >
       <Flex alignItems={"center"} justifyContent={"flex-start"} w={"full"}>
         <Image src="../public/profilepic.png" h={20} />
         <Text fontWeight={"bold"}>Tanveer Ahmad</Text>
