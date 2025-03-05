@@ -27,7 +27,7 @@ function ProfilePosts() {
         ))}
       {!isLoading &&
         [1, 2, 3, 4].map((item, index) => (
-          <ProfilePost key={index} item={item} />
+          <ProfilePost key={index} item={item} likes={1000} />
         ))}
     </Grid>
   );
