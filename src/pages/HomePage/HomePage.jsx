@@ -1,12 +1,13 @@
 import PostsCard from "@/Components/PostsCard/PostsCard";
-import { Container, Flex, Text } from "@chakra-ui/react";
+import SuggestedUserSection from "@/Components/SuggestedUserSection/SuggestedUserSection";
+import { Container, Flex } from "@chakra-ui/react";
 
 function HomePage() {
   return (
     <Container maxWidth={"container.lg"}>
       <Flex>
         <PostsCard />
-        <Text flex={2}>rIGHT SIDE</Text>
+        <SuggestedUserSection />
       </Flex>
     </Container>
   );

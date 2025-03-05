@@ -9,12 +9,7 @@ function PageLayout({ children }) {
     <Flex>
       {/* left side  */}
       {pathname != "/auth" && (
-        <Box
-          w={{ base: "70px", md: "240px" }}
-          h={"100vh"}
-          p={5}
-          borderRight={"1px solid grey"}
-        >
+        <Box w={{ base: "70px", md: "240px" }} h={"100vh"}>
           <SideBar />
         </Box>
       )}

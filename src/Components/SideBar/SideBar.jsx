@@ -45,7 +45,18 @@ function SideBar() {
     },
   ];
   return (
-    <Flex flexDir={"column"} h={"full"} alignItems={"center"} gap={10}>
+    <Flex
+      flexDir={"column"}
+      h={"full"}
+      alignItems={"center"}
+      gap={10}
+      borderRight={"1px solid grey"}
+      position={"fixed"}
+      p={5}
+      top={0}
+      left={0}
+      bottom={0}
+    >
       <Link
         as={RouterLink}
         to={"/auth"}
