@@ -1,3 +1,4 @@
+import useSignUpWithEmailAndPassword from "@/hooks/useSignUpWithEmailAndPassword";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Button, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { useState } from "react";
@@ -11,6 +12,8 @@ function SignUp() {
   });
 
   const [showPassword, setShowPassword] = useState(true);
+
+  const { signUp, loading } = useSignUpWithEmailAndPassword();
 
   return (
     <>
@@ -53,7 +56,12 @@ function SignUp() {
         </InputRightElement>
       </InputGroup>
 
-      <Button w={"full"} colorScheme="blue">
+      <Button
+        w={"full"}
+        colorScheme="blue"
+        onClick={() => signUp(inputs)}
+        isLoading={loading}
+      >
         SignUp
       </Button>
     </>
