@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  Button,
   Flex,
   HStack,
   Link,
@@ -18,8 +19,11 @@ import {
 } from "@/assets/constants";
 import { AiFillHome } from "react-icons/ai";
 import { BiLogOut } from "react-icons/bi";
+import useLogout from "@/hooks/useLogout";
 
 function SideBar() {
+  const { handleLogout, loading } = useLogout();
+
   const sidebarItems = [
     {
       icon: <AiFillHome size={25} />,
@@ -111,8 +115,16 @@ function SideBar() {
         mt={"auto"}
       >
         <HStack>
-          <BiLogOut size={25} />
-          <Text display={{ base: "none", md: "block" }}>Logout</Text>
+          <Button
+            display={{ base: "none", md: "block" }}
+            onClick={handleLogout}
+            isLoading={loading}
+          >
+            <HStack>
+              <BiLogOut size={25} />
+              <Text>Logout</Text>
+            </HStack>
+          </Button>
         </HStack>
       </Tooltip>
     </Flex>

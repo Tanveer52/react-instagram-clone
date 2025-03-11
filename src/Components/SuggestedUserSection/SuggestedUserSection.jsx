@@ -35,7 +35,7 @@ function SuggestedUserSection() {
           Log out
         </Text>
       </Flex>
-      <HStack w={"full"} justify={"space-between"}>
+      <HStack w={"full"} justify={"space-between"} mb={5}>
         <Text color={"gray.500"}>Suggested for you</Text>
         <Text fontWeight={"bold"} cursor={"pointer"}>
           See All
