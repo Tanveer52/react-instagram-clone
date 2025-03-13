@@ -7,7 +7,7 @@ function AuthPage() {
       <Container maxW={"container.md"}>
         <Flex gap={5} alignItems={"center"} justifyContent={"center"}>
           <Image
-            src="./public/auth.png"
+            src="./auth.png"
             display={{ base: "none", md: "block" }}
             height={650}
             alt="Auth Page Image"
@@ -17,9 +17,9 @@ function AuthPage() {
             <AuthForm />
             <Box textAlign={"center"}>Get the app.</Box>
             <Flex gap={5} justifyContent={"center"}>
-              <Image src="./public/microsoft.png" h={10} />
+              <Image src="./microsoft.png" h={10} />
 
-              <Image src="./public/playstore.png" h={10} />
+              <Image src="./playstore.png" h={10} />
             </Flex>
           </VStack>
         </Flex>

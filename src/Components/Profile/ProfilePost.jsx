@@ -107,7 +107,7 @@ function ProfilePost({ item, likes }) {
           width={"full"}
           fit={"cover"}
           borderRadius={4}
-          src={`../public/img${item}.png`}
+          src={`../img${item}.png`}
         />
       </GridItem>
 
@@ -138,7 +138,7 @@ function ProfilePost({ item, likes }) {
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <Image src="../public/img1.png" alt="profile post" />
+                <Image src="../img1.png" alt="profile post" />
               </Flex>
               <Flex
                 flex={1}
@@ -149,7 +149,7 @@ function ProfilePost({ item, likes }) {
                 <Flex alignItems={"center"} justifyContent={"space-between"}>
                   <Flex alignItems={"center"} gap={4}>
                     <Avatar
-                      src="../public/profilepic.png"
+                      src="../profilepic.png"
                       size={"sm"}
                       name="As a Programmer"
                     />

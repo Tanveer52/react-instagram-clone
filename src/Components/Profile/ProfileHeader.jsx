@@ -18,7 +18,7 @@ function ProfileHeader() {
       mb={5}
     >
       <AvatarGroup shape={"rounded"}>
-        <Avatar src="../public/profilepic.png" size={"2xl"} />
+        <Avatar src="../profilepic.png" size={"2xl"} />
       </AvatarGroup>
       <Box>
         <Flex alignItems={"center"}>

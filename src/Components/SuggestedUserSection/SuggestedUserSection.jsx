@@ -28,7 +28,7 @@ function SuggestedUserSection() {
       display={{ base: "none", md: "block" }}
     >
       <Flex alignItems={"center"} justifyContent={"flex-start"} w={"full"}>
-        <Image src="../public/profilepic.png" h={20} />
+        <Image src="../profilepic.png" h={20} />
         <Text fontWeight={"bold"}>Tanveer Ahmad</Text>
         <Spacer />
         <Text color={"blue.500"} cursor={"pointer"}>

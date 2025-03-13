@@ -5,28 +5,28 @@ function PostsCard() {
   const postsData = [
     {
       name: "Anglenia",
-      img: "../../public/img1.png",
+      img: "../../img1.png",
       likes: 1000,
       description: "Nature is healing 🌿",
       comments: 1000,
     },
     {
       name: "JohnDoe",
-      img: "../../public/img2.png",
+      img: "../../img2.png",
       likes: 850,
       description: "Enjoying the sunset 🌅",
       comments: 230,
     },
     {
       name: "SophiaM",
-      img: "../../public/img3.png",
+      img: "../../img3.png",
       likes: 1200,
       description: "Weekend vibes ✨",
       comments: 310,
     },
     {
       name: "MichaelR",
-      img: "../../public/img4.png",
+      img: "../../img4.png",
       likes: 920,
       description: "Chillin' with a coffee ☕",
       comments: 180,

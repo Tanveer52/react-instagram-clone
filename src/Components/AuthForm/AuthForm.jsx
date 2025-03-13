@@ -11,7 +11,7 @@ function AuthForm() {
     <>
       <Box border={"1px solid grey"} p={5}>
         <VStack spacing={4}>
-          <Image src="../../public/logo.png" alt="Auth Page Image" />
+          <Image src="../../logo.png" alt="Auth Page Image" />
           {isLogin ? <Login /> : <SignUp />}
           <Flex alignItems={"center"} justifyContent={"center"} w={"full"}>
             <Box flex={2} height={"1px"} bgColor={"white"}></Box>
